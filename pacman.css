@@ -10,6 +10,8 @@
     border-radius: 7px;
     width: 14px;
     height: 14px;
+    float: left;
+    margin: 23px;
 }
 
 #maze {
