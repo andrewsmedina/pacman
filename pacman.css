@@ -11,3 +11,11 @@
     width: 14px;
     height: 14px;
 }
+
+#maze {
+    background-color: #000;
+    height: 60px;
+    width: 600px;
+    border-radius: 6px;
+    border: 4px solid blue;
+}
