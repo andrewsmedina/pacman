@@ -1,6 +1,8 @@
 @-webkit-keyframes 'pacman' {
-    0% { background-position: 0px 0px; }
-    100% { background-position: 50px 0px; }
+    0% { border-right:25px solid transparent }
+    50% { border-right: 25px solid yellow }
+    75% { border-right: 25px solid yellow }
+    100% { border-right: 25px solid transparent }
 }
 
 
@@ -18,11 +20,10 @@
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 
-    /*-webkit-animation-name: 'pacman';
-    -webkit-animation-duration: 1s;
+    /*-webkit-animation-name: 'pacman';*/
+    -webkit-animation-duration: 0.2s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: 3;*/
 }
 
 
