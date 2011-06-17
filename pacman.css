@@ -5,11 +5,14 @@
     100% { border-right: 25px solid transparent }
 }
 
+#pacman .to-left {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
 
 #pacman {
     position: absolute;
     margin: 5px;
-
 
     border-right: 25px solid transparent;
     border-top: 25px solid yellow;
