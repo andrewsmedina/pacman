@@ -5,9 +5,13 @@
     100% { border-right: 25px solid transparent }
 }
 
-#pacman .to-left {
+#pacman.to-left {
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
+}
+#pacman.to-right {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
 }
 
 #pacman {

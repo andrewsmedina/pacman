@@ -49,6 +49,8 @@
     };
 
     PacMan.prototype.moveToRight = function() {
+        this.sprite.className = "to-right";
+
         if ( this.sprite.style.left.length === 0 ) {
             this.sprite.style.left = "10px";
         } else {
@@ -60,6 +62,9 @@
         if ( this.sprite.style.left !== 0 ) {
             this.sprite.style.left = ( parseInt( this.sprite.style.left ) - 10 ) + "px";
         }
+
+        this.sprite.className = "to-left";
+        
     };
 
     //PacMan.prototype.center = function() {
