@@ -27,6 +27,9 @@
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 
+
+    -webkit-transition: -webkit-transform .5s;
+    
     /*-webkit-animation-name: 'pacman';*/
     -webkit-animation-duration: 0.2s;
     -webkit-animation-timing-function: linear;
