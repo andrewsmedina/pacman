@@ -35,9 +35,13 @@
         if ( e.keyCode === 37 ) {
             pacman.moveToLeft();
         }
+        
+        for (var i=0; i<coins.length; i++)
+            pacman.collideWithCoin( coins[i] );
     };
     
-    //var coins = document.getElementsByClassName('coin');
+    var coins = document.getElementsByClassName('coin');
+    var maze = document.getElementById('maze');
     var pacman = new PacMan();
     //console.log("pac", pacman.sprite.offsetLeft);
 
@@ -67,8 +71,17 @@
         
     };
 
-    //PacMan.prototype.center = function() {
-    //    return this.sprite.
-    //}
+    PacMan.prototype.collideWithCoin = function(element) {
+        if ( ( this.center() > element.offsetLeft ) && ( this.center() < element.offsetLeft + element.clientWidth ) ) {
+            element.className = 'black';
+            console.log('colidiu', this.center(), element.offsetLeft, element.clientWidth, element);
+        } else {
+            console.log('nops')
+        }
+    };
+
+    PacMan.prototype.center = function() {
+        return this.sprite.offsetLeft + 25;
+    }
 
 })();
